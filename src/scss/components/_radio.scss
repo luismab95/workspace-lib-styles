@@ -1,0 +1,65 @@
+div.input-group {
+  &:has(input[type="radio"] + label) {
+    column-gap: $container-column-gap-radio;
+  }
+}
+
+input[type="radio"] {
+  &.radio-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: $size-radio-input;
+    height: $size-radio-input;
+    padding: $padding-radio-input;
+    margin: $margin-radio-input;
+    border: $border-radio-input;
+    position: relative;
+    cursor: pointer;
+    transition: $border-radio-transition;
+    @extend .rounded-circle;
+
+    & + label {
+      color: gray;
+    }
+
+    &:checked {
+      border-width: 4px;
+      border-color: $primary;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      &:before {
+        content: "";
+        display: block;
+        width: calc(#{$size-radio-check});
+        height: calc(#{$size-radio-check});
+
+        background-color: $primary;
+        @extend .rounded-circle;
+      }
+      &:disabled {
+        border-color: $primary;
+      }
+    }
+
+    &:not(:checked) {
+      &:before {
+        content: "";
+      }
+    }
+
+    &:disabled {
+      content: "";
+      width: $size-radio-input;
+      height: $size-radio-input;
+      border-color: $gray-light-1;
+      opacity: 0.4;
+      @extend .rounded-circle;
+
+      & + label {
+        opacity: 0.4;
+      }
+    }
+  }
+}

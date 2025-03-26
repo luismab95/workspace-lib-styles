@@ -1,0 +1,17 @@
+button.attach-delete {
+  background-color: $gray-light-1;
+  width: 155px;
+  color: $white;
+  @extend %background-border-animation;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray;
+    box-shadow: none;
+    color: $white;
+  }
+
+  & i {
+    color: $white;
+  }
+}

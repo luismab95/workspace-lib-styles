@@ -1,0 +1,50 @@
+.page-wrapper .page-body-wrapper .page-title .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: flex-end;
+
+  & li {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: Inter;
+    color: $gray;
+
+    &.breadcrumb-item {
+      font-size: 16px;
+      line-height: 19.36px;
+      & + li.breadcrumb-item:before {
+        content: "|";
+        color: $gray-light-1;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      &.active {
+        color: $gray;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19.36px;
+      }
+    }
+
+    & a {
+      border: 0;
+      text-decoration: none;
+      i {
+        color: $gray;
+
+        &.icon-lg {
+          font-size: 26px;
+        }
+
+        &:has(&.icon-lg) {
+          &::before {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+}

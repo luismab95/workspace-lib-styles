@@ -1,0 +1,30 @@
+@font-face {font-family: "svg-dispositivos";
+  src: url('svg-dispositivos.eot?t=1715446675730'); /* IE9*/
+  src: url('svg-dispositivos.eot?t=1715446675730#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("svg-dispositivos.woff2?t=1715446675730") format("woff2"),
+  url("svg-dispositivos.woff?t=1715446675730") format("woff"),
+  url('svg-dispositivos.ttf?t=1715446675730') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('svg-dispositivos.svg?t=1715446675730#svg-dispositivos') format('svg'); /* iOS 4.1- */
+}
+
+[class^="svg-dispositivos-"], [class*=" svg-dispositivos-"] {
+  font-family: 'svg-dispositivos' !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.svg-dispositivos-camera:before { content: "\ea01"; }
+.svg-dispositivos-computer:before { content: "\ea02"; }
+.svg-dispositivos-laptop:before { content: "\ea03"; }
+.svg-dispositivos-mobile:before { content: "\ea04"; }
+.svg-dispositivos-speakers:before { content: "\ea05"; }
+.svg-dispositivos-tablet:before { content: "\ea06"; }
+
+$svg-dispositivos-camera: "\ea01";
+$svg-dispositivos-computer: "\ea02";
+$svg-dispositivos-laptop: "\ea03";
+$svg-dispositivos-mobile: "\ea04";
+$svg-dispositivos-speakers: "\ea05";
+$svg-dispositivos-tablet: "\ea06";
+

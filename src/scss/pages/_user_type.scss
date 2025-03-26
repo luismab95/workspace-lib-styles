@@ -1,0 +1,14 @@
+.user-type {
+  figure {
+    text-align: center;
+    img[alt="profile"] {
+      width: 100%;
+      max-width: 200px;
+      border: 1px solid $gray;
+      border-radius: 5px;
+    }
+  }
+  input[type="file"] {
+    max-width: 155px;
+  }
+}

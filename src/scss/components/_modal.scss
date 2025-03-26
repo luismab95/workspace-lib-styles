@@ -1,0 +1,90 @@
+.modal-title {
+  color: $gray-dark-1;
+}
+
+.modal-content {
+  box-shadow: $box-shadow-modal;
+}
+
+.modal-action {
+  .theme-form {
+    margin: 0px 1.5rem;
+  }
+  .row {
+    .col-sm-12 {
+      &:has(.card [class^="card-"]){
+        padding: 0px;
+      }
+      .card {
+        margin-bottom: 0px;
+
+        .card-header {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-auto-flow: row;
+          align-items: center;
+          justify-items: center;
+          padding-top: 30px;
+          padding-bottom: 0px;
+          position: relative;
+          border: 0;
+          & .title-modal {
+            display: grid;
+            color: $gray-dark-1;
+            justify-content: center;
+            text-align: center;
+          }
+
+          p {
+            padding: 10px 33px 0px 33px;
+            margin: 0;
+          }
+
+          & .btn-close-modal {
+            position: absolute;
+            top: 15px;
+            font-size: 25px;
+            right: 15px;
+            height: 1em;
+            width: 1em;
+            background-color: transparent;
+            border: 0;
+            color: $gray;
+          }
+        }
+
+        .card-body {
+          .col-2 {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            .click {
+              cursor: pointer;
+              border: 0;
+              padding: 9px 4px;
+              background-color: $gray-light-2;
+              color: $gray-light-1;
+
+              @extend %background-border-animation;
+
+              &:active {
+                color: $gray;
+              }
+            }
+          }
+        }
+
+        .card-footer{
+          border: 0px;
+          border: none;
+          padding-top: 0px;
+          display: grid;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+
+

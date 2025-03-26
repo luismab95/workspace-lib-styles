@@ -1,0 +1,9 @@
+.page-body{
+    background-color: $white;
+}
+
+.page-wrapper.compact-wrapper .page-header .header-wrapper::before{
+    position: absolute;
+    content: none;
+    display: none;
+}

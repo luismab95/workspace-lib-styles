@@ -1,0 +1,33 @@
+#ad-config.card {
+  .card-body {
+    .form-group {
+      .form-input.position-relative {
+        input + .iconInput {
+          position: absolute !important;
+          top: 10px !important;
+          right: 0px !important;
+        }
+      }
+      .checkbox {
+        input[type="checkbox"] #mailerSecure {
+          height: 17px !important;
+          width: 17px !important;
+        }
+      }
+    }
+  }
+}
+
+label.col-form-label {
+  display: flex !important;
+  align-items: center !important;
+  color: $gray;
+
+  i.svg-informativo-circle-information.icon-md {
+    color: $primary !important;
+  }
+}
+
+i.svg-informativo-circle-information {
+  color: $primary;
+}

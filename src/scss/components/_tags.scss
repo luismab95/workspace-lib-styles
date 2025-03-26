@@ -1,0 +1,28 @@
+span.tag {
+  display: grid;
+  grid-auto-flow: column;
+  padding: $padding-tag;
+  column-gap: $gap-tag;
+  border-radius: $border-radius;
+  color: $white;
+  font-size: 12px;
+
+  &.initialized {
+    background-color: $turquoise-dark;
+  }
+  &.pending {
+    background-color: $yellow-dark;
+  }
+  &.sent {
+    background-color: $celeste-dark;
+  }
+  &.approved {
+    background-color: $green-dark;
+  }
+  &.declined {
+    background-color: $red-dark;
+  }
+  &.omitted {
+    background-color: $gray;
+  }
+}

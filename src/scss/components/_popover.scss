@@ -1,0 +1,43 @@
+.popover-custom {
+  background: $secondary-dark;
+  font-size: 16px;
+  @extend .rounded;
+
+  & h3.popover-header {
+    background: $secondary-dark;
+    color: $white;
+    border-bottom: none;
+    height: min-content;
+    padding: 0px 12px;
+    font-weight: 900;
+  }
+
+  & .popover-body {
+    background: $secondary-dark;
+    padding: 0px 12px 6px 12px;
+    color: $white;
+    height: min-content;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: -10px;
+  }
+
+  &.bs-popover-end > .popover-arrow::after {
+    border-right-color: $secondary-dark;
+  }
+  &.bs-popover-top > .popover-arrow::after {
+    border-top-color: $secondary-dark;
+  }
+  &.bs-popover-bottom > .popover-arrow::after {
+    border-bottom-color: $secondary-dark;
+  }
+  &.bs-popover-start > .popover-arrow::after {
+    border-left-color: $secondary;
+  }
+
+  &:has(.popover-header) {
+    & .popover-body {
+      padding-top: 4px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.modal-right {
+    transform: translateX(34.8%);
+    height: 100vh;
+
+    div.modal-content {
+        height: 100vh;
+    }
+
+    div.action-btn {
+        position: absolute;
+        bottom: 0;
+    }
+
+    --bs-modal-margin: 0px !important;
+}

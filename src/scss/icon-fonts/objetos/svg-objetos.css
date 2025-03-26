@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "svg-objetos";
+  src: url('svg-objetos.eot?t=1715446356790'); /* IE9*/
+  src: url('svg-objetos.eot?t=1715446356790#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("svg-objetos.woff2?t=1715446356790") format("woff2"),
+  url("svg-objetos.woff?t=1715446356790") format("woff"),
+  url('svg-objetos.ttf?t=1715446356790') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('svg-objetos.svg?t=1715446356790#svg-objetos') format('svg'); /* iOS 4.1- */
+}
+
+[class^="svg-objetos-"], [class*=" svg-objetos-"] {
+  font-family: 'svg-objetos' !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.svg-objetos-accidentes:before { content: "\ea01"; }
+.svg-objetos-bar-chart-alt:before { content: "\ea02"; }
+.svg-objetos-bar-chart:before { content: "\ea03"; }
+.svg-objetos-book:before { content: "\ea04"; }
+.svg-objetos-calendar:before { content: "\ea05"; }
+.svg-objetos-clipboard-check:before { content: "\ea06"; }
+.svg-objetos-clipboard-list:before { content: "\ea07"; }
+.svg-objetos-clipboard:before { content: "\ea08"; }
+.svg-objetos-clock:before { content: "\ea09"; }
+.svg-objetos-comment:before { content: "\ea0a"; }
+.svg-objetos-compass:before { content: "\ea0b"; }
+.svg-objetos-credit-card:before { content: "\ea0c"; }
+.svg-objetos-cultura:before { content: "\ea0d"; }
+.svg-objetos-database:before { content: "\ea0e"; }
+.svg-objetos-deporte:before { content: "\ea0f"; }
+.svg-objetos-document-add:before { content: "\ea10"; }
+.svg-objetos-document-check:before { content: "\ea11"; }
+.svg-objetos-document-download:before { content: "\ea12"; }
+.svg-objetos-document-empty:before { content: "\ea13"; }
+.svg-objetos-document-remove:before { content: "\ea14"; }
+.svg-objetos-document:before { content: "\ea15"; }
+.svg-objetos-dolar:before { content: "\ea16"; }
+.svg-objetos-folder-add:before { content: "\ea17"; }
+.svg-objetos-folder-check:before { content: "\ea18"; }
+.svg-objetos-folder-download:before { content: "\ea19"; }
+.svg-objetos-folder-remove:before { content: "\ea1a"; }
+.svg-objetos-folder:before { content: "\ea1b"; }
+.svg-objetos-home:before { content: "\ea1c"; }
+.svg-objetos-image:before { content: "\ea1d"; }
+.svg-objetos-inbox:before { content: "\ea1e"; }
+.svg-objetos-location:before { content: "\ea1f"; }
+.svg-objetos-map:before { content: "\ea20"; }
+.svg-objetos-megaphone:before { content: "\ea21"; }
+.svg-objetos-notification-off:before { content: "\ea22"; }
+.svg-objetos-notification:before { content: "\ea23"; }
+.svg-objetos-office:before { content: "\ea24"; }
+.svg-objetos-pen:before { content: "\ea25"; }
+.svg-objetos-pin:before { content: "\ea26"; }
+.svg-objetos-print:before { content: "\ea27"; }
+.svg-objetos-shopping-cart-add:before { content: "\ea28"; }
+.svg-objetos-shopping-cart:before { content: "\ea29"; }
+.svg-objetos-tag:before { content: "\ea2a"; }
+.svg-objetos-webcam:before { content: "\ea2b"; }
+

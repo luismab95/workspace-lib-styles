@@ -1,0 +1,35 @@
+.pagination{
+    column-gap: 2px;
+    .page-item:first-child {
+      .page-link {
+        margin-right: 15px;
+        background-color: #F1F5FF;
+        color: $gray;
+      }
+    }
+    .page-item:last-child {
+      .page-link {
+        margin-left: 15px;
+        background-color: #F1F5FF;
+        color: $gray;
+      }
+    }
+    .page-link {
+      color: $gray;
+      border: none;
+      &.active {
+        z-index: 3;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+    .active {
+      > .page-link {
+        z-index: 3;
+        color: $white;
+        background-color: $primary;
+        border-color: $light-color;
+        border-radius: 8px;
+      }
+    }
+  }

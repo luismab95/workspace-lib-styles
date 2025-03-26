@@ -1,0 +1,95 @@
+button.logs {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  width: min-content;
+  border: 1px solid $gray-light-1;
+  color: $gray;
+  column-gap: 8px;
+  padding: 8px 20px;
+  background-color: $white;
+
+  @extend .rounded-1;
+
+  & img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  & span {
+    color: $gray;
+  }
+
+  & i {
+    color: $gray-light-1;
+  }
+
+  &:hover {
+    background-color: $celeste-light;
+  }
+
+  &:active:focus {
+    background-color: $gray-light-2;
+
+    & span {
+      color: $primary-dark;
+    }
+
+    & i {
+      @extend .svg-flechas-caret-up;
+      color: $primary-dark;
+    }
+  }
+}
+
+.page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown {
+  position: absolute;
+  width: 160px;
+  top: 57px;
+  left: -17px;
+  padding: 0 10px;
+
+  & li {
+    padding: 10px !important;
+    border-bottom: 1px solid $gray-light-2;
+    & a {
+      border: none;
+      color: $gray;
+      & i {
+        color: $gray;
+        &:hover {
+          color: $gray-light-1;
+        }
+        &:active {
+          color: $gray-dark-1;
+        }
+      }
+      &:hover {
+        color: $gray-light-1;
+      }
+      &:active {
+        color: $gray-dark-1;
+      }
+      &.btn.btn-primary {
+        padding: 0.375rem 0px;
+        color: $white;
+      }
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      a {
+        span {
+          color: $primary;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+}

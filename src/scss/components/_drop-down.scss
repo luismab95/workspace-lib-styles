@@ -1,0 +1,29 @@
+.drop-actions {
+
+    i {
+        padding: 5px 2px !important;
+        ;
+        &:hover {
+            background-color: $gray-light-2;
+            border-radius: 100px;
+        }
+
+    }
+
+    .drop-options {
+        &:after {
+            display: none !important;
+        }
+    }
+
+    .dropdown-menu.show {
+        background-color: white;
+        padding: 12px;
+    }
+}
+
+div.table-responsive {
+    &:has(div.dropdown-menu.show) {
+        overflow-x: clip;
+    }
+}
