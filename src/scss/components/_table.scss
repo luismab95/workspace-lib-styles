@@ -1,0 +1,88 @@
+/**=====================
+    2.30 Table CSS Start
+==========================**/
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+	border-color: $light-color ;
+}
+
+tbody{
+	tr{
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+} 
+
+
+.table {
+	margin-bottom: $table-b-margin;
+
+	> :not(:last-child) {
+		> :last-child {
+			>* {
+				border-bottom-color: $light-gray;
+			}
+		}
+	}
+
+	th,
+	td {
+		padding: $table-padding;
+	}
+
+	&.table-primary {
+		th {
+			color: $white;
+		}
+	}
+
+	thead.bg-primary {
+		tr {
+			th {
+				color: $white;
+			}
+		}
+	}
+
+	th {
+		color: $table-heading-color;
+		font-weight: 500;
+
+		&.f-light {
+			color: var(--chart-text-color);
+			opacity: 0.8;
+		}
+	}
+
+	td {
+		color: $table-row-color;
+	}
+
+	[class*='bg-'] {
+		color: $white;
+	}
+
+	.bg-light {
+		color: $theme-body-font-color;
+	}
+
+	tfoot {
+		font-weight: $table-footer-font-weight;
+	}
+}
+
+.table-dark {
+	th {
+		color: $white;
+	}
+}
+
+/**=====================
+    2.30 Table CSS Ends
+==========================**/

@@ -1,0 +1,205 @@
+/**=====================
+     2.2 Alert CSS start
+==========================**/
+
+.alert {
+  border-radius: $alert-border-radious;
+  padding: 15px;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  .progress {
+    margin-top: $alert-padding;
+  }
+
+  [data-notify="icon"] {
+    margin-right: 10px;
+    line-height: 20px;
+    position: absolute;
+  }
+
+  [data-notify="message"] {
+    display: inline-block;
+    width: 100%;
+  }
+
+  i {
+    margin-right: 5px;
+    font-size: $alert-msg-icon-size;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .close {
+    opacity: 1;
+
+    span {
+      font-size: 24px;
+      font-weight: 400;
+      display: inline-block;
+      border-radius: 3px;
+      text-shadow: none;
+      padding: 0 5px;
+      padding-right: 0;
+    }
+  }
+}
+
+.alert-dismissible {
+  padding-right: 2.5rem;
+
+  [dir="rtl"] & {
+    padding-right: 15px;
+    padding-left: 2.5rem;
+  }
+
+  .close {
+    padding: 10px 1.25rem;
+    top: 4px;
+    padding-right: 13px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      opacity: 1;
+      color: inherit;
+    }
+  }
+}
+
+.card-body {
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .alert {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;
+      margin-right: 26px;
+      position: absolute;
+      top: 18px;
+      left: 6px;
+
+      & ~ p {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+strong {
+  display: inline-block;
+
+  & ~ p {
+    display: inline-block;
+  }
+}
+
+$alert-name: primary, secondary, success, danger, warning, info, light, dark;
+
+$alert-color: $primary-color, $secondary-color, $success-color, $danger-color,
+  $warning-color, $info-color, $light-color, $dark-color;
+
+@each $var in $alert-name {
+  $i: index($alert-name, $var);
+
+  .alert-#{$var} {
+    background-color: rgba(nth($alert-color, $i), 0.9);
+    border-color: rgba(nth($alert-color, $i), 0.9);
+    color: $white;
+
+    .progress {
+      height: 5px;
+      background-color: darken(nth($alert-color, $i), 1%);
+      border-radius: 0;
+    }
+
+    .progress-bar {
+      background-color: lighten(nth($alert-color, $i), 50%);
+    }
+
+    .btn-close {
+      filter: brightness(1) invert(1);
+    }
+
+    .alert-link {
+      color: nth($alert-color, $i);
+
+      @if ($var == "light") {
+        color: $dark-color;
+      }
+    }
+
+    @if ($var == "light") {
+      color: $dark-color;
+      background-color: $light-color;
+
+      .btn-close {
+        filter: unset;
+      }
+    }
+
+    hr {
+      border-top-color: nth($alert-color, $i);
+    }
+  }
+
+  .border-#{$var} {
+    border-color: nth($alert-color, $i) !important;
+  }
+
+  .alert-dark,
+  .alert-info {
+    .btn-close {
+      filter: none;
+    }
+  }
+
+  .border-left-wrapper {
+    border-left: 4px solid $dark-color;
+  }
+
+  $alert-light-name: primary, secondary, success, warning, info, light, danger,
+    dark;
+
+  $alert-light-color: $light-primary, $light-secondary, $light-success,
+    $light-warning, $light-info, $light-white, $light-danger, $light-dark;
+
+  @each $var in $alert-light-name {
+    $i: index($alert-light-name, $var);
+
+    .alert-light-#{$var} {
+      background-color: nth($alert-light-color, $i);
+    }
+  }
+
+  .alert-dismissible {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  // flag-icons
+  .alert {
+    &.notify-alert {
+      &.alert-copy {
+        display: flex !important;
+      }
+    }
+  }
+}
+/**=====================
+  2.2 Alert CSS end
+  ==========================**/

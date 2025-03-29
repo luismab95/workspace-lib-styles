@@ -1,7 +1,7 @@
 {
   "name": "lib-styles",
   "version": "1.0.0",
-  "description": "Lib styles for microfrontends in workspace project.",
+  "description": "Lib of styles and statics for microfrontends in workspace project.",
   "main": "src/scss/app.scss",
   "author": "luismab95@gmail.com",
   "repository": {
@@ -11,14 +11,17 @@
   "keywords": [
     "nginx",
     "sass",
-    "css"
+    "css",
+    "scss"
   ],
   "scripts": {
     "build": "sass src/scss/app.scss dist/index.css && npm run copy-files",
-    "copy-files": "cp -r src/images dist/ && cp -r src/fonts dist/",
+    "copy-files": "cp -r src/images dist/",
     "watch": "sass --watch src/scss/app.scss:dist/index.css"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
   "devDependencies": {
     "sass": "^1.86.0"
   },

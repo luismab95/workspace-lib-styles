@@ -1,4 +1,4 @@
-FROM node:20.12.2-buster as builder
+FROM node:22.14.0-bullseye as builder
 
 RUN npm i -g sass
 

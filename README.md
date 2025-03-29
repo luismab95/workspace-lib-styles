@@ -52,7 +52,6 @@ The compiled JavaScript files will be in the `dist` directory.
 ```
 .
 ├── src
-│   ├── fonts
 │   ├── images
 │   ├── scss
 |   │   ├── app.scss
@@ -62,12 +61,10 @@ The compiled JavaScript files will be in the `dist` directory.
 └── README.md
 ```
 
-- `src/fonts`: Fonts for all microfrontends.
 - `src/images`: Images and icons.
 - `src/scss`: Styles in scss files.
   - `app.scss`: Index style file.
 - `package.json`: npm configuration file.
-- `load-svg.js`: Script for load svg.
 - `nginx.conf`: Nginx configuration.
 - `README.md`: Project documentation.
 
